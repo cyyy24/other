@@ -71,13 +71,11 @@ public class MergeTwoSortedCollection {
                 if (allowDup) {
                     mergedList.add(t1);
                     mergedList.add(t2);
-                    t1Prev = null;
-                    t2Prev = null;
                 } else {
                     mergedList.add(t1);
-                    t1Prev = null;
-                    t2Prev = null;
                 }
+                t1Prev = null;
+                t2Prev = null;
             } else if (cp.compare(t1, t2) < 0) {
                 mergedList.add(t1);
                 t1Prev = null;
